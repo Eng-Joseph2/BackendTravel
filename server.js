@@ -8,7 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 mongo
-  .connect("mongodb://localhost:27017/TRAVAL_AGENCY_PROJECT")
+  .connect(
+    "mongodb+srv://cabdiqaniyacquub8_db_user:SNHsFgZOxPZJjhqE@travel123.sopmlw3.mongodb.net/?retryWrites=true&w=majority&appName=Travel123"
+  )
   .then(() => {
     console.log("Sucess COnnected");
   });
